@@ -17,8 +17,8 @@ public class Edge {
 		String driverPath = "./resources/webdrivers/pc/MicrosoftWebDriver.exe";
 
 		String url = "http://facebook.com/";
-		String email_address = "abc@gmail.cc";
-		String password = "*******************";
+		String email_address = "publicbmuser@smsstam.net";
+		String password = "Buska@2017";
 
 		if (!System.getProperty("os.name").contains("Windows")) throw new IllegalArgumentException("MS Edge is available only on Windows");
 
@@ -36,7 +36,7 @@ public class Edge {
 
 		driver.findElement(By.id("email")).sendKeys(email_address);
 		driver.findElement(By.id("pass")).sendKeys(password);
-		driver.findElement(By.id("u_0_2")).click();
+		driver.findElement(By.id("loginbutton")).click();
 
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id='u_0_a']/div[1]/div[1]/div/a/span")).click();
@@ -46,7 +46,7 @@ public class Edge {
 
 		Thread.sleep(1000);
 		driver.findElement(By.id("userNavigationLabel")).click();
-		driver.findElement(By.xpath("//li[22]/a/span/span")).click();
+		driver.findElement(By.xpath("//span[text()='Log Out']")).click();
 
 		Thread.sleep(1000);
 		driver.quit();

@@ -49,7 +49,7 @@ public class Chrome {
         driver.findElement(By.id("loginbutton")).click();
         
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id='u_0_a']/div[1]/div[1]/div/a/span")).click();
+        driver.findElement(By.xpath("//*[@id='u_0_b']/div[1]/div[1]/div/a/span")).click();
 
         Thread.sleep(1000);
         String friends = driver.findElement(By.xpath("//div[2]/ul/li[3]/a/span[1]")).getText();
